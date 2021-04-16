@@ -9,7 +9,7 @@ export default class Human {
     this.jupiterAge = 0;
   }
 
-  mercuryConversion() {
+  ageConversion() {
     this.mercuryAge = this.earthAge / .24;
   }
 }
