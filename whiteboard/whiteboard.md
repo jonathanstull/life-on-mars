@@ -23,13 +23,13 @@ Take a person's age in years and create a class that does the following:
   --this.age = age;
   --let earthYears = this.age;
 // write a method that converts the user's age in Earth years to Mercury years
-  --return this.mercuryYears = this.earthYears * .24;
+  --return this.mercuryYears = this.earthYears / .24;
 // write another method that converts the user's age in Earth years to Venus years
-  --return venusYears = earthYears * .62;
+  --return venusYears = earthYears / .62;
 // write another method that converts the user's age in Earth years to Mars years
-  --return marsYears = earthYears * 1.88;
+  --return marsYears = earthYears / 1.88;
 // write another method that converts the user's age in Earth years to Jupiter years
-  --return jupiterYears = earthYears * 11.86;
+  --return jupiterYears = earthYears / 11.86;
 // write another method that takes a user's desired lifespan and tells them how many years they have left to live or have exceeded their desired lifespan
   --on Earth: timeLeft = earthYears - lifespan
   --on another planet: timeLeft = (earthYears * conversion rate) - (lifespan * conversion rate)

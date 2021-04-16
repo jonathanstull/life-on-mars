@@ -8,4 +8,8 @@ export default class Human {
     this.marsAge = 0;
     this.jupiterAge = 0;
   }
+
+  mercuryConversion() {
+
+  }
 }
