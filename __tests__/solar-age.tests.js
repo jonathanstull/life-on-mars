@@ -37,8 +37,8 @@ describe('Human', () => {
   it('should pass the years left difference for Mercury, Venus, Mars, and Jupiter', () => {
     jonathan.lifespanConversion();
     expect(jonathan.mercury.get("yearsLeftOnMercury")).toEqual(191.6667);
-    expect(jonathan.venus.get("yearsLeft")).toEqual(75.1936);
-    expect(jonathan.mars.get("yearsLeft")).toEqual(27.4681);
-    expect(jonathan.jupiter.get("yearsLeft")).toEqual(3.8786);
+    expect(jonathan.venus.get("yearsLeftOnVenus")).toEqual(74.1935);
+    expect(jonathan.mars.get("yearsLeftOnMars")).toEqual(24.4681);
+    expect(jonathan.jupiter.get("yearsLeftOnJupiter")).toEqual(3.8786);
   });
 });
