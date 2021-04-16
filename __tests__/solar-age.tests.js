@@ -8,24 +8,29 @@ describe('Human', () => {
     jonathan = new Human(34, 80);
   });
 
-  it('should construct an object human with current earthAge, desired earthDeathAge, mercuryAge, venusAge, marsAge, and jupiterAge', () => {
+  it('should construct an object human with current earthAge, earthDeathAge, and empty objects for Mercury, Venus, Mars, and Jupiter', () => {
     expect(jonathan.earthAge).toEqual(34);
     expect(jonathan.earthDeathAge).toEqual(80);
-    expect(jonathan.mercuryAge).toEqual(0);
-    expect(jonathan.venusAge).toEqual(0);
-    expect(jonathan.marsAge).toEqual(0);
-    expect(jonathan.jupiterAge).toEqual(0);
+    expect(jonathan.mercury).toEqual({});
+    expect(jonathan.venus).toEqual({});
+    expect(jonathan.mars).toEqual({});
+    expect(jonathan.jupiter).toEqual({});
   });
 
-  it('should convert earthAge to mercuryAge and pass the value into the corresponding property', () => {
-    jonathan.ageConversion();
-    expect(jonathan.mercuryAge).toEqual(141.6667);
+  it('should convert earthAge to mercuryAge and pass the property into a new map object Mercury', () => {
+    jonathan.lifespanConversion();
+    expect(jonathan.mercury.get("mercuryAge")).toEqual(141.6667);
   });
 
-  it('should convert earthAge to venusAge, marsAge, and jupiterAge and pass the value into the corresponding property', () => {
-    jonathan.ageConversion();
-    expect(jonathan.venusAge).toEqual(54.8387);
-    expect(jonathan.marsAge).toEqual(18.0851);
-    expect(jonathan.jupiterAge).toEqual(2.8668);
+  it('should convert earthAge to venusAge, marsAge, and jupiterAge and pass the value into the corresponding new map objects', () => {
+    jonathan.lifespanConversion();
+    expect(jonathan.venus.get("venusAge")).toEqual(54.8387);
+    expect(jonathan.mars.get("marsAge")).toEqual(18.0851);
+    expect(jonathan.jupiter.get("jupiterAge")).toEqual(2.8668);
+  });
+
+  it('should pass the difference yearsLeft between earthAge and earthDeath into an earth map object', () => {
+    jonathan.lifespanConversion();
+    expect(jonathan.earth.get("yearsLeft")).toEqual(46);
   });
 });
