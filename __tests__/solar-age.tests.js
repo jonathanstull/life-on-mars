@@ -48,4 +48,14 @@ describe('Human', () => {
     jonathan.yearsPast();
     expect(jonathan.earthYearsPast).toEqual(15);
   });
+
+  it('should return the years lived past life expectancy on remaining planets', () => {
+    jonathan = new Human(95, 80);
+    jonathan.lifespanConversion();
+    jonathan.yearsPast();
+    expect(jonathan.mercury.get("mercuryYearsPast").toEqual(62.5000));
+    expect(jonathan.venus.get("venusYearsPast").toEqual(24.1935));
+    expect(jonathan.mars.get("marsYearsPast").toEqual(7.9787));
+    expect(jonathan.jupiter.get("jupiterYearsPast").toEqual(1.2648));
+  });
 });
