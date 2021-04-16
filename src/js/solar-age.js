@@ -51,10 +51,26 @@ export default class Human {
     this.jupiter.set("yearsLeftOnJupiter", parseFloat(jupiterYearsLeft.toFixed(4)));
   }
 
-  yearsPast() {
+  yearsPast() {    
     let earthYearsPast = this.earthAge - this.earthDeathAge;
-    if (earthYearsPast > 0) {
+    let mercuryYearsPast = this.mercury.get("yearsLeftOnMercury");
+    let venusYearsPast = this.venus.get("yearsLeftOnVenus");
+    let marsYearsPast = this.mars.get("yearsLeftOnMars");
+    let jupiterYearsPast = this.jupiter.get("yearsLeftOnJupiter");
+    if (earthYearsPast < 0) {
       return this.earthYearsPast = earthYearsPast;
+    }
+    if (mercuryYearsPast > 0) {
+      this.mercury.set("mercuryYearsPast", Math.abs(mercuryYearsPast));
+    }
+    if (venusYearsPast > 0) {
+      this.venus.set("venusYearsPast", Math.abs(venusYearsPast));
+    }
+    if (marsYearsPast > 0) {
+      this.mars.set("marsYearsPast", Math.abs(marsYearsPast));
+    }
+    if (jupiterYearsPast > 0) {
+      this.jupiter.set("jupiterYearsPast", Math.abs(jupiterYearsPast));
     }
   }
 }
