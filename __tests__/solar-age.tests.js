@@ -20,7 +20,8 @@ describe('Human', () => {
   it('should pass earth age and earth life expectancy into an array in the earth object', () => {
     jonathan.earthConversion();
     expect(jonathan.earth).toEqual([34, 80]);
-  }
+  })
+});
 
   // it('should convert earthAge to mercuryAge and pass the property into a new map object Mercury', () => {
   //   jonathan.lifespanConversion();
@@ -63,4 +64,4 @@ describe('Human', () => {
   //   expect(jonathan.mars.get("marsYearsPast").toEqual(7.9787));
   //   expect(jonathan.jupiter.get("jupiterYearsPast").toEqual(1.2648));
   // });
-});
+// });
