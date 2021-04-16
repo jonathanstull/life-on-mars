@@ -18,6 +18,7 @@ describe('Human', () => {
   });
 
   it('should pass earth age and earth life expectancy into an array in the earth object', () => {
+    jonathan.earthConversion();
     expect(jonathan.earth).toEqual([34, 80]);
   }
 
