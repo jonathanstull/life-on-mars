@@ -26,9 +26,14 @@ describe('Human', () => {
     jonathan.convertVenus();
     jonathan.convertMars();
     jonathan.convertJupiter();
-    expect(jonathan.venus).toEqual([53, 129]);
+    expect(jonathan.venus).toEqual([54, 129]);
     expect(jonathan.mars).toEqual([18, 42]);
     expect(jonathan.jupiter).toEqual([2, 6]);
+  });
+
+  it('should return the number of years left to live on Earth as the third value of an Earth object array', () => {
+    jonathan.convertEarth();
+    expect(jonathan.earth).toEqual([34, 80, 46]);
   });
 });
 

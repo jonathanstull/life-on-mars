@@ -9,6 +9,10 @@ export default class Human {
     this.jupiter = [];
   }
 
+  convertEarth() {
+
+  }
+
   convertMercury() {
     let earthArray = [this.earthAge, this.earthDeathAge];
     let mercuryArray = [];
@@ -19,15 +23,30 @@ export default class Human {
   }
 
   convertVenus() {
-
+    let earthArray = [this.earthAge, this.earthDeathAge];
+    let venusArray = [];
+    earthArray.forEach((element) => {
+      venusArray.push(parseInt(element / 0.62));
+      return this.venus = venusArray;
+    })
   }
 
   convertMars() {
-
+    let earthArray = [this.earthAge, this.earthDeathAge];
+    let marsArray = [];
+    earthArray.forEach((element) => {
+      marsArray.push(parseInt(element / 1.88));
+      return this.mars = marsArray;
+    })
   }
 
   convertJupiter() {
-
+    let earthArray = [this.earthAge, this.earthDeathAge];
+    let jupiterArray = [];
+    earthArray.forEach((element) => {
+      jupiterArray.push(parseInt(element / 11.86));
+      return this.jupiter = jupiterArray;
+    })
   }
 }
 
