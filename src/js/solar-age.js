@@ -49,4 +49,8 @@ export default class Human {
     this.jupiter.set("jupiterDeathAge", parseFloat(jupiterDeathAge.toFixed(4)));
     this.jupiter.set("yearsLeftOnJupiter", parseFloat(jupiterYearsLeft.toFixed(4)));
   }
+
+  yearsPast() {
+
+  }
 }
