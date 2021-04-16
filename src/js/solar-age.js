@@ -3,6 +3,7 @@ export default class Human {
   constructor(earthAge, earthDeathAge) {
     this.earthAge = earthAge;
     this.earthDeathAge = earthDeathAge;
+    this.earth = [];
     this.mercury = [];
     this.venus = [];
     this.mars = [];
@@ -48,6 +49,8 @@ export default class Human {
       return this.jupiter = jupiterArray;
     })
   }
+
+
 }
 
 //   earthConversion() {
