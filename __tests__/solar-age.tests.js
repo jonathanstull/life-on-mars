@@ -19,13 +19,13 @@ describe('Human', () => {
 
   it('should convert earthAge to mercuryAge and pass the value into the corresponding property', () => {
     jonathan.ageConversion();
-    expect(jonathan.mercuryAge).toEqual(jonathan.earthAge/.24);  // toEqual value is an infinite decimal 141.6666..., meaning no test will pass when passing an approximate decimal
+    expect(jonathan.mercuryAge).toEqual(141.6667);
   });
 
   it('should convert earthAge to venusAge, marsAge, and jupiterAge and pass the value into the corresponding property', () => {
     jonathan.ageConversion();
-    expect(jonathan.venusAge).toEqual(54.8387096774);
-    expect(jonathan.marsAge).toEqual(18.085106383);
-    expect(jonathan.jupiterAge).toEqual(2.8667790894);
+    expect(jonathan.venusAge).toEqual(54.8387);
+    expect(jonathan.marsAge).toEqual(18.0851);
+    expect(jonathan.jupiterAge).toEqual(2.8668);
   });
 });
