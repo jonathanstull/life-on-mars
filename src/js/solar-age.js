@@ -3,13 +3,15 @@ export default class Human {
   constructor(earthAge, earthDeathAge) {
     this.earthAge = earthAge;
     this.earthDeathAge = earthDeathAge;
-    this.mercury = {};
-    this.venus = {};
-    this.mars = {};
-    this.jupiter = {};
+    this.mercury = [];
+    this.venus = [];
+    this.mars = [];
+    this.jupiter = [];
   }
 
+  convertAge() {
 
+  }
 }
 
 //   earthConversion() {
