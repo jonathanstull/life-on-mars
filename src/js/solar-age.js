@@ -10,6 +10,6 @@ export default class Human {
   }
 
   mercuryConversion() {
-
+    this.mercuryAge = this.earthAge / .24;
   }
 }

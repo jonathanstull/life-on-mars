@@ -18,7 +18,7 @@ describe('Human', () => {
   });
 
   it('should convert earthAge to mercuryAge and pass the value into the corresponding property', () => {
-    mercuryConversion();
-    expect(jonathan.mercuryAge).toEqual(34/.24);
+    jonathan.mercuryConversion();
+    expect(jonathan.mercuryAge).toEqual(jonathan.earthAge/.24);
   });
 });
