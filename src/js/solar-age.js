@@ -3,6 +3,7 @@ export default class Human {
   constructor(earthAge, earthDeathAge) {
     this.earthAge = earthAge;
     this.earthDeathAge = earthDeathAge;
+    this.earthYearsPast = 0;
     this.earth = {};
     this.mercury = {};
     this.venus = {};
@@ -51,6 +52,9 @@ export default class Human {
   }
 
   yearsPast() {
-
+    let earthYearsPast = this.earthAge - this.earthDeathAge;
+    if (earthYearsPast > 0) {
+      return this.earthYearsPast = earthYearsPast;
+    }
   }
 }

@@ -46,6 +46,6 @@ describe('Human', () => {
     jonathan = new Human(95, 80);
     jonathan.lifespanConversion();
     jonathan.yearsPast();
-    expect(earthYearsPast).toEqual(15);
+    expect(jonathan.earthYearsPast).toEqual(15);
   });
 });
