@@ -34,3 +34,22 @@ Take a person's age in years and create a class that does the following:
   --on Earth: timeLeft = earthYears - lifespan
   --on another planet: timeLeft = (earthYears * conversion rate) - (lifespan * conversion rate)
   --include in this method a way to differentiate between positive and negative values and a different return that converts a negative into a positive without losing the implication
+
+
+End-of-day reframe:
+
+(everything below is pseudo-code)
+
+export default class Human {
+
+  constructor(earthAgeInput, earthDeathAgeInput) {
+    this.earthAge = earthAgeInput;
+    this.earthDeathAge = earthDeathAgeInput;
+    this.earthYearsLeft = earthDeathAgeInput - earthAgeInput;
+    this.earthYearsPast = earthAgeInput - earthDeathAgeInput;
+  }
+
+  earthArray() {
+    
+  }
+}
