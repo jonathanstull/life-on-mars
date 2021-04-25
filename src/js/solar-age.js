@@ -12,9 +12,7 @@ export default class Human {
   }
 
   mercuryConversion() {
-    this.mercury = new Map();
-    let mercuryAge = this.earthAge / .24;
-    return this.mercury.set("mercuryAge", parseFloat(mercuryAge.toFixed(4)));
+    
   }
 
   // lifespanConversion() {

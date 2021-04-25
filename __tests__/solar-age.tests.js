@@ -17,10 +17,14 @@ describe('Human', () => {
     expect(jonathan.jupiter).toEqual({});
   });
 
-  it('should convert Earth age to Mercury age', () => {
+  it('should set Mercury age, Mercury death age, and Mercury years left to Earth values', () => {
     jonathan.mercuryConversion();
-    expect(jonathan.mercury.get("mercuryAge")).toEqual(141.6667);
+    expect(jonathan.mercury.get("mercuryAge")).toEqual(34);
+    expect(jonathan.mercury.get("mercuryDeathAge")).toEqual(80);
+    expect(jonathan.mercury.get("mercuryYearsLeft")).toEqual(46);
   });
+
+  // it('should convert Mercury age to)
 
   // it('should convert earthAge to mercuryAge and pass the property into a new map object Mercury', () => {
   //   jonathan.lifespanConversion();
