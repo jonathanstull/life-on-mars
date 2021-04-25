@@ -12,15 +12,15 @@ export default class Human {
   }
 
   mercuryConversion() {
-    this.mercury = new Map();
-    let mercuryAge = this.earthAge;
-    let mercuryDeathAge = this.earthDeathAge;
-    let mercuryYearsLeft = mercuryDeathAge - mercuryAge;
-    let mercuryYearsPast = mercuryAge - mercuryDeathAge;
-    this.mercury.set("mercuryAge", mercuryAge);
-    this.mercury.set("mercuryDeathAge", mercuryDeathAge);
-    this.mercury.set("mercuryYearsLeft", mercuryYearsLeft);
-    this.mercury.set("mercuryYearsPast", mercuryYearsPast);
+    // this.mercury = new Map();
+    // let mercuryAge = this.earthAge / .24;
+    // let mercuryDeathAge = this.earthDeathAge / .24;
+    // let mercuryYearsLeft = mercuryDeathAge - mercuryAge;
+    // let mercuryYearsPast = mercuryAge - mercuryDeathAge;
+    // this.mercury.set("mercuryAge", parseFloat(mercuryAge.toFixed(4)));
+    // this.mercury.set("mercuryDeathAge", parseFloat(mercuryDeathAge.toFixed(4)));
+    // this.mercury.set("mercuryYearsLeft", parseFloat(mercuryYearsLeft).toFixed(4));
+    // this.mercury.set("mercuryYearsPast", parseFloat(mercuryYearsPast).toFixed(4));
   }
 
   // lifespanConversion() {
