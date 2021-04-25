@@ -24,15 +24,15 @@ export default class Human {
   }
 
   venusConversion() {
-    // this.venus = new Map();
-    // let venusAge = (this.earthAge / .62).toFixed(4);
-    // let venusDeathAge = (this.earthDeathAge / .62).toFixed(4);
-    // let venusYearsLeft = (venusDeathAge - venusAge).toFixed(4);
-    // let venusYearsPast = (venusAge - venusDeathAge).toFixed(4);
-    // this.venus.set("venusAge", parseFloat(venusAge));
-    // this.venus.set("venusDeathAge", parseFloat(venusDeathAge));
-    // this.venus.set("venusYearsLeft", parseFloat(venusYearsLeft));
-    // this.venus.set("venusYearsPast", parseFloat(venusYearsPast));
+    this.venus = new Map();
+    let venusAge = (this.earthAge / .62).toFixed(4);
+    let venusDeathAge = (this.earthDeathAge / .62).toFixed(4);
+    let venusYearsLeft = (venusDeathAge - venusAge).toFixed(4);
+    let venusYearsPast = (venusAge - venusDeathAge).toFixed(4);
+    this.venus.set("venusAge", parseFloat(venusAge));
+    this.venus.set("venusDeathAge", parseFloat(venusDeathAge));
+    this.venus.set("venusYearsLeft", parseFloat(venusYearsLeft));
+    this.venus.set("venusYearsPast", parseFloat(venusYearsPast));
   }
 
   // lifespanConversion() {
