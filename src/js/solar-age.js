@@ -16,9 +16,11 @@ export default class Human {
     let mercuryAge = this.earthAge;
     let mercuryDeathAge = this.earthDeathAge;
     let mercuryYearsLeft = mercuryDeathAge - mercuryAge;
+    let mercuryYearsPast = mercuryAge - mercuryDeathAge;
     this.mercury.set("mercuryAge", mercuryAge);
     this.mercury.set("mercuryDeathAge", mercuryDeathAge);
     this.mercury.set("mercuryYearsLeft", mercuryYearsLeft);
+    this.mercury.set("mercuryYearsPast", mercuryYearsPast);
   }
 
   // lifespanConversion() {
