@@ -45,7 +45,7 @@ describe('Human', () => {
   it('should set and convert Venus values to Venus years', () => {
     jonathan.venusConversion();
     expect(jonathan.venus.get("venusAge")).toEqual(54.8387);
-    expect(jonathan.venus.get("venusDeathAge")).toEqual(129.0322);
+    expect(jonathan.venus.get("venusDeathAge")).toEqual(129.0323);
     expect(jonathan.venus.get("venusYearsLeft")).toEqual(74.1935);
     expect(jonathan.venus.get("venusYearsPast")).toEqual(-74.1935);
   })
