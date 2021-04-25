@@ -57,16 +57,16 @@ describe('Human', () => {
     expect(jonathan.jupiter.get("jupiterYearsLeft")).toEqual(3.8786);
   })
   
-  // it('should convert all years past if Earth age is greater than life expectancy', () => {
-  //   let jonathan = new Human(90, 80);
-  //   jonathan.mercuryConversion();
-  //   jonathan.venusConversion();
-  //   jonathan.marsConversion();
-  //   jonathan.jupiterConversion();
-  //   jonathan.calculateYearsPast();
-  //   expect(jonathan.yearsPast.get("mercuryYearsPast")).toEqual(-191.6666);
-  //   expect(jonathan.yearsPast.get("venusYearsPast")).toEqual(-74.1936);
-  //   expect(jonathan.yearsPast.get("marsYearsPast")).toEqual(-24.4681);
-  //   expect(jonathan.yearsPast.get("jupiterYearsPast")).toEqual(-24.4681);
-  // })
+  it('should convert all years past if Earth age is greater than life expectancy', () => {
+    let jonathan = new Human(90, 80);
+    jonathan.mercuryConversion();
+    jonathan.venusConversion();
+    jonathan.marsConversion();
+    jonathan.jupiterConversion();
+    jonathan.calculateYearsPast();
+    expect(jonathan.yearsPast.get("mercuryYearsPast")).toEqual(41.6667);
+    expect(jonathan.yearsPast.get("venusYearsPast")).toEqual(16.1289);
+    expect(jonathan.yearsPast.get("marsYearsPast")).toEqual(5.3191);
+    expect(jonathan.yearsPast.get("jupiterYearsPast")).toEqual(0.8431);
+  })
 });
