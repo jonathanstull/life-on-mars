@@ -12,7 +12,7 @@ export default class Human {
   }
   
   calculateYearsPast() {
-    // this.yearsPast = new Map();
+    this.yearsPast = new Map();
     // if (this.earthAge >= this.earthDeathAge) {
     //   let mercuryYearsPast = (this.mercury.get("mercuryAge") - this.mercury.get("mercuryDeathAge")).toFixed(4);
     //   this.yearsPast.set("mercuryYearsPast", parseFloat(mercuryYearsPast));
