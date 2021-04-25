@@ -23,6 +23,11 @@ describe('Human', () => {
     expect(jonathan.mercury.get("mercuryDeathAge")).toEqual(80);
   });
 
+  it('should calculate Mercury years left in Earth years', () => {
+    jonathan.mercuryConversion();
+    expect(jonathan.mercury.get("mercuryYearsLeft")).toEqual(46);
+  })
+
   // it('should convert Mercury age to)
 
   // it('should convert earthAge to mercuryAge and pass the property into a new map object Mercury', () => {
