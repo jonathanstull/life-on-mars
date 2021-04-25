@@ -13,14 +13,18 @@ export default class Human {
 
   mercuryConversion() {
     this.mercury = new Map();
-    // let mercuryAge = (this.earthAge / .24).toFixed(4);
-    // let mercuryDeathAge = (this.earthDeathAge / .24).toFixed(4);
-    // let mercuryYearsLeft = mercuryDeathAge - mercuryAge;
-    // let mercuryYearsPast = mercuryAge - mercuryDeathAge;
-    // this.mercury.set("mercuryAge", parseFloat(mercuryAge));
-    // this.mercury.set("mercuryDeathAge", parseFloat(mercuryDeathAge));
-    // this.mercury.set("mercuryYearsLeft", parseFloat(mercuryYearsLeft));
-    // this.mercury.set("mercuryYearsPast", parseFloat(mercuryYearsPast));
+    let mercuryAge = (this.earthAge / .24).toFixed(4);
+    let mercuryDeathAge = (this.earthDeathAge / .24).toFixed(4);
+    let mercuryYearsLeft = (mercuryDeathAge - mercuryAge).toFixed(4);
+    let mercuryYearsPast = (mercuryAge - mercuryDeathAge).toFixed(4);
+    this.mercury.set("mercuryAge", parseFloat(mercuryAge));
+    this.mercury.set("mercuryDeathAge", parseFloat(mercuryDeathAge));
+    this.mercury.set("mercuryYearsLeft", parseFloat(mercuryYearsLeft));
+    this.mercury.set("mercuryYearsPast", parseFloat(mercuryYearsPast));
+  }
+
+  venusConversion() {
+    
   }
 
   // lifespanConversion() {
