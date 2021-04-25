@@ -46,8 +46,8 @@ describe('Human', () => {
     jonathan.venusConversion();
     expect(jonathan.venus.get("venusAge")).toEqual(54.8387);
     expect(jonathan.venus.get("venusDeathAge")).toEqual(129.0323);
-    expect(jonathan.venus.get("venusYearsLeft")).toEqual(74.1935);
-    expect(jonathan.venus.get("venusYearsPast")).toEqual(-74.1935);
+    expect(jonathan.venus.get("venusYearsLeft")).toEqual(74.1936);
+    expect(jonathan.venus.get("venusYearsPast")).toEqual(-74.1936);
   })
 
   // it('should convert Mercury age to)
