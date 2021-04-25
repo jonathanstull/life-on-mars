@@ -36,7 +36,15 @@ export default class Human {
   }
 
   marsConversion() {
-
+    this.mars = new Map();
+    let marsAge = (this.earthAge / 1.88).toFixed(4);
+    let marsDeathAge = (this.earthDeathAge / 1.88).toFixed(4);
+    let marsYearsLeft = (marsDeathAge - marsAge).toFixed(4);
+    let marsYearsPast = (marsAge - marsDeathAge).toFixed(4);
+    this.mars.set("marsAge", parseFloat(marsAge));
+    this.mars.set("marsDeathAge", parseFloat(marsDeathAge));
+    this.mars.set("marsYearsLeft", parseFloat(marsYearsLeft));
+    this.mars.set("marsYearsPast", parseFloat(marsYearsPast));
   }
 
   // lifespanConversion() {

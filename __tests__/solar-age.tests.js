@@ -35,7 +35,6 @@ describe('Human', () => {
 
   it('should convert Mercury values to Mercury years', () => {
     jonathan.mercuryConversion();
-    console.log(jonathan.mercury);
     expect(jonathan.mercury.get("mercuryAge")).toEqual(141.6667);
     expect(jonathan.mercury.get("mercuryDeathAge")).toEqual(333.3333);
     expect(jonathan.mercury.get("mercuryYearsLeft")).toEqual(191.6666);
@@ -53,9 +52,9 @@ describe('Human', () => {
   it('should set and convert Mars values to Mars years', () => {
     jonathan.marsConversion();
     expect(jonathan.mars.get("marsAge")).toEqual(18.0851);
-    expect(jonathan.mars.get("marsDeathAge")).toEqual(42.5531);
-    expect(jonathan.mars.get("marsYearsLeft")).toEqual(24.4680);
-    expect(jonathan.mars.get("marsYearsPast")).toEqual(-24.4680);
+    expect(jonathan.mars.get("marsDeathAge")).toEqual(42.5532);
+    expect(jonathan.mars.get("marsYearsLeft")).toEqual(24.4681);
+    expect(jonathan.mars.get("marsYearsPast")).toEqual(-24.4681);
   })
 
   // it('should convert Mercury age to)
