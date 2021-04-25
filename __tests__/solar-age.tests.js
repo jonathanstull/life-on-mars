@@ -57,6 +57,14 @@ describe('Human', () => {
     expect(jonathan.mars.get("marsYearsPast")).toEqual(-24.4681);
   })
 
+  it('should set and convert Jupiter values to Jupiter years', () => {
+    jonathan.jupiterConversion();
+    expect(jonathan.jupiter.get("jupiterAge")).toEqual(18.0851);
+    expect(jonathan.jupiter.get("jupiterDeathAge")).toEqual(42.5532);
+    expect(jonathan.jupiter.get("jupiterYearsLeft")).toEqual(24.4681);
+    expect(jonathan.jupiter.get("jupiterYearsPast")).toEqual(-24.4681);
+  })
+
   // it('should convert Mercury age to)
 
   // it('should convert earthAge to mercuryAge and pass the property into a new map object Mercury', () => {

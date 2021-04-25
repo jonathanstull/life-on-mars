@@ -47,6 +47,10 @@ export default class Human {
     this.mars.set("marsYearsPast", parseFloat(marsYearsPast));
   }
 
+  jupiterConversion() {
+    
+  }
+
   // lifespanConversion() {
   //   this.earth = new Map();
   //   let earthYearsLeft = this.earthDeathAge - this.earthAge;
