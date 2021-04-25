@@ -21,7 +21,6 @@ describe('Human', () => {
     jonathan.mercuryConversion();
     expect(jonathan.mercury.get("mercuryAge")).toEqual(34);
     expect(jonathan.mercury.get("mercuryDeathAge")).toEqual(80);
-    expect(jonathan.mercury.get("mercuryYearsLeft")).toEqual(46);
   });
 
   // it('should convert Mercury age to)
