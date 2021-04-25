@@ -35,6 +35,10 @@ export default class Human {
     this.venus.set("venusYearsPast", parseFloat(venusYearsPast));
   }
 
+  marsConversion() {
+
+  }
+
   // lifespanConversion() {
   //   this.earth = new Map();
   //   let earthYearsLeft = this.earthDeathAge - this.earthAge;
