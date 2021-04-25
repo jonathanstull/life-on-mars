@@ -35,10 +35,11 @@ describe('Human', () => {
 
   it('should convert Mercury values to Mercury years', () => {
     jonathan.mercuryConversion();
+    console.log(jonathan.mercury);
     expect(jonathan.mercury.get("mercuryAge")).toEqual(141.6667);
     expect(jonathan.mercury.get("mercuryDeathAge")).toEqual(333.3333);
-    expect(jonathan.mercury.get("mercuryYearsLeft")).toBe(191.6667);
-    expect(jonathan.mercury.get("mercuryYearsPast")).toBe(-191.6667);
+    expect(jonathan.mercury.get("mercuryYearsLeft")).toEqual(191.6666);
+    expect(jonathan.mercury.get("mercuryYearsPast")).toEqual(-191.6666);
   })
 
   // it('should convert Mercury age to)
