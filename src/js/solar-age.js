@@ -48,7 +48,15 @@ export default class Human {
   }
 
   jupiterConversion() {
-    
+    this.jupiter = new Map();
+    let jupiterAge = (this.earthAge / 1.88).toFixed(4);
+    let jupiterDeathAge = (this.earthDeathAge / 1.88).toFixed(4);
+    let jupiterYearsLeft = (jupiterDeathAge - jupiterAge).toFixed(4);
+    let jupiterYearsPast = (jupiterAge - jupiterDeathAge).toFixed(4);
+    this.jupiter.set("jupiterAge", parseFloat(jupiterAge));
+    this.jupiter.set("jupiterDeathAge", parseFloat(jupiterDeathAge));
+    this.jupiter.set("jupiterYearsLeft", parseFloat(jupiterYearsLeft));
+    this.jupiter.set("jupiterYearsPast", parseFloat(jupiterYearsPast));
   }
 
   // lifespanConversion() {
