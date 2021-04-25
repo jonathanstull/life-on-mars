@@ -65,7 +65,7 @@ describe('Human', () => {
     jonathan.jupiterConversion();
     jonathan.calculateYearsPast();
     expect(jonathan.yearsPast.get("mercuryYearsPast")).toEqual(41.6667);
-    expect(jonathan.yearsPast.get("venusYearsPast")).toEqual(16.1289);
+    expect(jonathan.yearsPast.get("venusYearsPast")).toEqual(16.1290);
     expect(jonathan.yearsPast.get("marsYearsPast")).toEqual(5.3191);
     expect(jonathan.yearsPast.get("jupiterYearsPast")).toEqual(0.8431);
   })

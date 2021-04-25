@@ -13,16 +13,16 @@ export default class Human {
   
   calculateYearsPast() {
     this.yearsPast = new Map();
-    // if (this.earthAge >= this.earthDeathAge) {
-    //   let mercuryYearsPast = (this.mercury.get("mercuryAge") - this.mercury.get("mercuryDeathAge")).toFixed(4);
-    //   this.yearsPast.set("mercuryYearsPast", parseFloat(mercuryYearsPast));
-    //   let venusYearsPast = (this.venus.get("venusAge") - this.venus.get("venusDeathAge")).toFixed(4);
-    //   this.venus.set("venusYearsPast", parseFloat(venusYearsPast));
-    //   let marsYearsPast = (this.mars.get("marsAge") - this.mars.get("marsDeathAge")).toFixed(4);
-    //   this.mars.set("marsYearsPast", parseFloat(marsYearsPast));
-    //   let jupiterYearsPast = (this.jupiter.get("jupiterAge") - this.jupiter.get("jupiterDeathAge")).toFixed(4);
-    //   this.jupiter.set("jupiterYearsPast", parseFloat(jupiterYearsPast));
-    // } else return;
+    if (this.earthAge >= this.earthDeathAge) {
+      let mercuryYearsPast = (this.mercury.get("mercuryAge") - this.mercury.get("mercuryDeathAge")).toFixed(4);
+      let venusYearsPast = (this.venus.get("venusAge") - this.venus.get("venusDeathAge")).toFixed(4);
+      let marsYearsPast = (this.mars.get("marsAge") - this.mars.get("marsDeathAge")).toFixed(4);
+      let jupiterYearsPast = (this.jupiter.get("jupiterAge") - this.jupiter.get("jupiterDeathAge")).toFixed(4);
+      this.yearsPast.set("mercuryYearsPast", parseFloat(mercuryYearsPast));
+      this.yearsPast.set("venusYearsPast", parseFloat(venusYearsPast));
+      this.yearsPast.set("marsYearsPast", parseFloat(marsYearsPast));
+      this.yearsPast.set("jupiterYearsPast", parseFloat(jupiterYearsPast));
+    } else return;
   }
 
   mercuryConversion() {
