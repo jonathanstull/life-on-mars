@@ -52,8 +52,8 @@ describe('Human', () => {
   
   it('should set and convert Jupiter values to Jupiter years', () => {
     jonathan.jupiterConversion();
-    expect(jonathan.jupiter.get("jupiterAge")).toEqual(2.8667);
-    expect(jonathan.jupiter.get("jupiterDeathAge")).toEqual(6.7453);
+    expect(jonathan.jupiter.get("jupiterAge")).toEqual(2.8668);
+    expect(jonathan.jupiter.get("jupiterDeathAge")).toEqual(6.7454);
     expect(jonathan.jupiter.get("jupiterYearsLeft")).toEqual(3.8786);
   })
   
