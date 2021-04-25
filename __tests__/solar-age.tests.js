@@ -8,9 +8,10 @@ describe('Human', () => {
     jonathan = new Human(34, 80);
   });
 
-  it('should construct an object human with current earthAge, earthDeathAge, and empty objects for Mercury, Venus, Mars, and Jupiter', () => {
+  it('should construct an object human with current earthAge, earthDeathAge, and empty objects for years past, Mercury, Venus, Mars, and Jupiter', () => {
     expect(jonathan.earthAge).toEqual(34);
     expect(jonathan.earthDeathAge).toEqual(80);
+    expect(jonathan.yearsPast).toEqual({});
     expect(jonathan.mercury).toEqual({});
     expect(jonathan.venus).toEqual({});
     expect(jonathan.mars).toEqual({});
@@ -30,7 +31,7 @@ describe('Human', () => {
 
   it('should calculate and convert Mercury years past from Earth years', () => {
     jonathan.mercuryConversion();
-    expect(jonathan.mercury.get("mercuryYearsPast")).toEqual(-191.6666);
+    expect(jonathan.yearsPast.get("mercuryYearsPast")).toEqual(-191.6666);
   })
 
   it('should convert Mercury values to Mercury years', () => {
@@ -38,7 +39,7 @@ describe('Human', () => {
     expect(jonathan.mercury.get("mercuryAge")).toEqual(141.6667);
     expect(jonathan.mercury.get("mercuryDeathAge")).toEqual(333.3333);
     expect(jonathan.mercury.get("mercuryYearsLeft")).toEqual(191.6666);
-    expect(jonathan.mercury.get("mercuryYearsPast")).toEqual(-191.6666);
+    expect(jonathan.yearsPast.get("mercuryYearsPast")).toEqual(-191.6666);
   })
 
   it('should set and convert Venus values to Venus years', () => {
@@ -46,7 +47,7 @@ describe('Human', () => {
     expect(jonathan.venus.get("venusAge")).toEqual(54.8387);
     expect(jonathan.venus.get("venusDeathAge")).toEqual(129.0323);
     expect(jonathan.venus.get("venusYearsLeft")).toEqual(74.1936);
-    expect(jonathan.venus.get("venusYearsPast")).toEqual(-74.1936);
+    expect(jonathan.yearsPast.get("venusYearsPast")).toEqual(-74.1936);
   })
 
   it('should set and convert Mars values to Mars years', () => {
@@ -54,7 +55,7 @@ describe('Human', () => {
     expect(jonathan.mars.get("marsAge")).toEqual(18.0851);
     expect(jonathan.mars.get("marsDeathAge")).toEqual(42.5532);
     expect(jonathan.mars.get("marsYearsLeft")).toEqual(24.4681);
-    expect(jonathan.mars.get("marsYearsPast")).toEqual(-24.4681);
+    expect(jonathan.yearsPast.get("marsYearsPast")).toEqual(-24.4681);
   })
 
   it('should set and convert Jupiter values to Jupiter years', () => {
@@ -62,6 +63,6 @@ describe('Human', () => {
     expect(jonathan.jupiter.get("jupiterAge")).toEqual(18.0851);
     expect(jonathan.jupiter.get("jupiterDeathAge")).toEqual(42.5532);
     expect(jonathan.jupiter.get("jupiterYearsLeft")).toEqual(24.4681);
-    expect(jonathan.jupiter.get("jupiterYearsPast")).toEqual(-24.4681);
+    expect(jonathan.yearsPast.get("jupiterYearsPast")).toEqual(-24.4681);
   })
 });
