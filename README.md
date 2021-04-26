@@ -21,8 +21,13 @@ Life on Mars is a solar age converter built and refactored over weeks V and VI a
 
 * Open via Bash/GitBash:
   1. Clone this repository onto your computer: git clone [life-on-mars](https://github.com/jonathanstull/life-on-mars.git)
-  2. Navigate into the ~/life-on-mars directory, and open in VSCode or preferred text editor code.
-  3. Run `npm install` to install all available webpack dependencies.
+  2. Navigate into the ~/life-on-mars directory, and open in VSCode or preferred text editor code .
+  4. To start a development server and view the project in the browser:
+    * Navigate to `life-on-mars/` in your command line
+    * Run the command `npm install` to install dependencies
+    * Optionally, run the commmand `npm run build` to make a bundle of the files
+    * Finally, run the command `npm run start` to start a development server
+  5. To run tests, navigate to `life-on-mars/` in your terminal and run the command `npm run test`
 
 ## **Known Bugs**
 
